@@ -26,6 +26,8 @@ class ViewController: UIViewController
     }
     
     
+    var currentGame : Game!
+    
     var listOfWords = ["box", "cheese", "butter"]
     
     var lives = 0
@@ -45,6 +47,9 @@ class ViewController: UIViewController
         
         
         let word = listOfWords.removeFirst()
+        currentGame = Game(word: word, lives: lives)
+        
+        
         
         
         updateUI()
@@ -52,6 +57,10 @@ class ViewController: UIViewController
 
     
     func updateUI(){
+        
+        imageOutput.image = UIImage(named: "Tree \(currentGame.lives)")
+        scoreLabel.text = "Wins \(wins) and Losses \(losses)"
+        
         
         
     }
