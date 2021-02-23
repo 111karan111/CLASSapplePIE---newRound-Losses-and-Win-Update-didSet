@@ -15,4 +15,16 @@ struct Game {
     
     
     
+    
+    mutating func playerGuessed(_ letter : Character) {
+        
+        
+        if !word.contains(letter){
+            
+            lives -= 1
+            
+        }
+        
+    }
+    
 }

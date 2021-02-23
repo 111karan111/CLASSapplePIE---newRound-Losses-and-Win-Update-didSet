@@ -68,8 +68,12 @@ class ViewController: UIViewController
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         
+        let letterString = sender.title(for: .normal)!
+        let letter = Character(letterString.lowercased())
         
+        currentGame.playerGuessed(letter)
         
+        updateUI()
         
     }
     
