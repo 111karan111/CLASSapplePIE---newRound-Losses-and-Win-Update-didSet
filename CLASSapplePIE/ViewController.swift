@@ -30,7 +30,18 @@ class ViewController: UIViewController
     
     var lives = 7
     var wins = 0
+    
+    {
+        didSet{
+            newRound()
+        }
+    }
     var losses = 0
+    {
+        didSet {
+            newRound()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +86,27 @@ class ViewController: UIViewController
         currentGame.playerGuessed(letter)
         
         
+        updateGame()
+        
+    }
+    
+    func updateGame(){
+        
+        if currentGame.lives == 0 {
+            losses += 1
+            
+        }
+        
+       else if currentGame.word == currentGame.formattedWord{
+            wins += 1
+        }
+        
+        
+       else {
+        
         updateUI()
+        
+       }
         
     }
     
