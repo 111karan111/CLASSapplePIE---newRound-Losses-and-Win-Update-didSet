@@ -271,7 +271,6 @@
                     <connections>
                         <outlet property="correctWordLabel" destination="jMu-Yh-kBT" id="gNv-GN-NO9"/>
                         <outlet property="imageOutput" destination="NMa-V5-TeK" id="4I0-he-yoc"/>
-                        <outlet property="outputImage" destination="NMa-V5-TeK" id="911-QB-7i9"/>
                         <outlet property="scoreLabel" destination="RuK-5S-ApS" id="EYh-VK-Coj"/>
                         <outletCollection property="letterButton" destination="JzE-bp-xZP" collectionClass="NSMutableArray" id="xEs-WZ-Wdd"/>
                         <outletCollection property="letterButton" destination="GSM-y8-DU3" collectionClass="NSMutableArray" id="Ul9-4x-18R"/>

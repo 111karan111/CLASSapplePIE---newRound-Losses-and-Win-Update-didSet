@@ -21,16 +21,14 @@ class ViewController: UIViewController
     
     
     @IBOutlet var letterButton: [UIButton]!
-    
-    @IBAction func buttonPressed(_ sender: UIButton) {
-    }
+
     
     
     var currentGame : Game!
     
     var listOfWords = ["box", "cheese", "butter"]
     
-    var lives = 0
+    var lives = 7
     var wins = 0
     var losses = 0
     
@@ -60,6 +58,16 @@ class ViewController: UIViewController
         
         imageOutput.image = UIImage(named: "Tree \(currentGame.lives)")
         scoreLabel.text = "Wins \(wins) and Losses \(losses)"
+        
+    
+        
+        
+        
+    }
+    
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        
         
         
         
